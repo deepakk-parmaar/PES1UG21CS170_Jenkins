@@ -7,6 +7,9 @@ pipeline {
                 script {
                     // Compile the .cpp file using a shell script
                     sh '''
+                        cd main
+                    '''
+                    sh '''
                         g++ -o output_binary hello.cpp
                     '''
                 }
